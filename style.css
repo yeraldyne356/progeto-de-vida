@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --cor-do-fundo: #9f2478;
+    --branco: #ffffff;
+    --botao: rgb(208, 92, 162); 
+    --botao-ativo: #c764a7;
+    --borda: rgb#bd2171;
+    --cor-abas:#d068c9;
+}   
+body{
+    background-color: var(--cor-do-fundo);
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1{
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botoes{
+    display: block;
+
+}
+.botao{
+    background-color: var(--botao);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding:1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--borda);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top:none;
+    color: black;
+}
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--botao);
+}
+.abas{
+    background-color: var(--cor-abas);
+    padding: 40px;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
+}
+.textos{
+    display: none;
+}
+.textos.ativo{
+    display: block;
+}
+.texto-titulo{
+    font-size: 30px;
+    text-align: center;
+}
+.texto-subtitulo{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digitos{
+    padding: 0 16px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    min-width: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contador-numero{
+    font-size: 80px;
+    margin: 0;
+    color: var(black);
+}
+@media screen and ( min-width: 800px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
+
+    
