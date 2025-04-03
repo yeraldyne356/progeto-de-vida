@@ -3,12 +3,12 @@
     margin: 0;
 }
 :root{
-    --cor-do-fundo: #9f2478;
-    --branco: #ffffff;
-    --botao: rgb(208, 92, 162); 
-    --botao-ativo: #c764a7;
-    --borda: rgb#bd2171;
-    --cor-abas:#d068c9;
+    --cor-do-fundo:#470c3f;
+    --branco: #ffff;
+    --botao: #5f1348;
+    --botao-ativo: #6ddf1c;
+    --borda:#11ff05;
+    --cor-abas: rgba(146, 26, 110, 0.767);
 }   
 body{
     background-color: var(--cor-do-fundo);
@@ -44,7 +44,7 @@ h1{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top:none;
-    color: black;
+    color: rgb(255, 253, 253);
 }
 .botao:first-child{
     border-radius: 40px 40px 0 0;
@@ -71,7 +71,7 @@ h1{
 }
 .texto-subtitulo{
     font-size: 20px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 252, 252);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .contador{
@@ -89,7 +89,7 @@ h1{
 .contador-numero{
     font-size: 80px;
     margin: 0;
-    color: var(black);
+    color: var(rgb(244, 238, 238));
 }
 @media screen and ( min-width: 800px) {
     .botoes{
